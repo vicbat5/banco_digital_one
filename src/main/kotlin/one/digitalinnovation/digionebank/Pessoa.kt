@@ -7,16 +7,13 @@ class Pessoa {
     /*inner class Endereco{//argumento interno
         var rua:String = "Rua teste"
     }*/
+    constructor()
+
+    fun uneNomeCpf() = "$nome e $cpf"
 }
 
 fun main(){
     val victor = Pessoa()
 
-    victor.cpf = "4572"//tendo acesso aos dados do objeto
-
-    println(victor)
-    println(victor.nome)
-    println(victor.cpf)
-
-    //println(victor.Endereco().rua)
+    println(victor.uneNomeCpf())
 }
